@@ -22,6 +22,15 @@ The system is built using the following components:
 
 ![Vrnnn!!!](https://github.com/user-attachments/assets/98ffbfb5-17f8-4627-8930-b175f3b00895)
 
+## Connections
+-MPU6050	VCC	3.3V
+-MPU6050	GND	GND
+-MPU6050	SDA	D2 (GPIO4)
+-MPU6050	SCL	D1 (GPIO5)
+-MPU6050	ADO	GND (optional)
+-Buzzer	VCC	3.3V or 5V (depends on buzzer)
+-Buzzer	GND	GND
+-Buzzer	Signal Pin	D3 (GPIO0)
 
 ## Methodology
 1. The *MPU6050 sensor* continuously monitors the user's movement.
