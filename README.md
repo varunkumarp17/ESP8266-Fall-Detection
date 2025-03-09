@@ -22,15 +22,33 @@ The system is built using the following components:
 
 ![Vrnnn!!!](https://github.com/user-attachments/assets/98ffbfb5-17f8-4627-8930-b175f3b00895)
 
-## Connections
--MPU6050	VCC	3.3V
--MPU6050	GND	GND
--MPU6050	SDA	D2 (GPIO4)
--MPU6050	SCL	D1 (GPIO5)
--MPU6050	ADO	GND (optional)
--Buzzer	VCC	3.3V or 5V (depends on buzzer)
--Buzzer	GND	GND
--Buzzer	Signal Pin	D3 (GPIO0)
+
+This project connects an *MPU6050 Accelerometer & Gyroscope* sensor to an *ESP8266* and triggers a *buzzer* based on sensor data.
+
+## 🛠 Wiring Connections
+
+### 📌 MPU6050 to ESP8266
+
+| MPU6050 Pin | ESP8266 Pin  |
+|------------|-------------|
+| VCC    | 3.3V        |
+| GND    | GND         |
+| SDA    | D2 (GPIO4)  |
+| SCL    | D1 (GPIO5)  |
+| ADO    | GND         |
+
+### 🔔 Buzzer to ESP8266
+
+| Buzzer Pin | ESP8266 Pin  |
+|------------|-------------|
+| VCC        | 3.3V or 5V  |
+| GND        |   GND       |
+| Signal Pin | D3 (GPIO0)  |
+
+## Notes
+- Ensure the *MPU6050* is powered using *3.3V*, as using 5V might damage it.
+- The *buzzer voltage* depends on the type of buzzer used. Check its specifications.
+- Use *I2C scanner code* to verify if the *MPU6050* is detected correctly.
 
 ## Methodology
 1. The *MPU6050 sensor* continuously monitors the user's movement.
