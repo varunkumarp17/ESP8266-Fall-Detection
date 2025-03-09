@@ -1,6 +1,5 @@
-# Patient Fall Detection using ESP8266
+# IOT Patient Fall Detection System using ESP8266
 
-# IoT Fall Detection System
 
 ## Introduction
 With increasing age, the risk of falling due to weak bones and other health conditions also increases. Immediate assistance after a fall is crucial to prevent severe health complications. The *IoT Fall Detection System* is designed to detect falls using sensors and alert caregivers in real time, ensuring timely medical intervention.
